@@ -1,0 +1,348 @@
+﻿<!DOCTYPE 
+<html>
+<head>
+<link rel="stylesheet" href="animate.css">
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<title>Quiz</title>
+<link rel="icon" type="image/png" href="../images/logo.jpg">
+<style>
+.css_button {
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: 2px solid #d83526;
+    padding: 7px 26px;
+    text-shadow: 0px 1px 0px #b23e35;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
+    -moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, #ce0100 48%, #fe1a00 100%);
+    background: -moz-linear-gradient(90deg, #ce0100 48%, #fe1a00 100%);
+    background: -ms-linear-gradient(90deg, #ce0100 48%, #fe1a00 100%);
+    background: linear-gradient(180deg, #fe1a00 48%, #ce0100 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe1a00",endColorstr="#ce0100");
+}
+
+.css_button:hover {
+    background: -webkit-linear-gradient(90deg, #fe1a00 48%, #ce0100 100%);
+    background: -moz-linear-gradient(90deg, #fe1a00 48%, #ce0100 100%);
+    background: -ms-linear-gradient(90deg, #fe1a00 48%, #ce0100 100%);
+    background: linear-gradient(180deg, #ce0100 48%, #fe1a00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ce0100",endColorstr="#fe1a00");
+}
+
+.css_button:active {
+    position:relative;
+    top: 1px;
+}
+fieldset{
+	
+	margin-left:20px;
+	margin-right:20px;
+}
+legend{
+font-family: Rye ;
+line-height: 1em;
+color: #000000;
+font-size: 20px;
+text-shadow:0px 0px 0 rgb(-97,-97,-97), 1px 0px 0 rgb(-184,-184,-184),2px 0px 1px rgba(0,0,0,0.05),2px 0px 1px rgba(0,0,0,0.5),0px 0px 1px rgba(0,0,0,.2);
+
+
+}
+
+label{
+	font-style: italic;
+	
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+.rightans{
+	color: #0C0;
+}
+.wrongans{
+	color: #F00;
+}
+.count{
+font-family: Almendra SC ;
+font-size: 20px;
+}
+
+.al {
+    font-family: 'Times New Roman';
+	font-size: 20px;
+	font-style: oblique;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 27.5px;
+}
+#Qhead {
+	color: #d7ceb2;
+	text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+	font: 70px 'BazarMedium';
+	letter-spacing: 10px;
+}
+#box{
+	height :2220;
+        border-style: solid;
+   	border-color: F0E68C;
+	width:989;
+	background-image: url('../images/bg1.jpg');
+}
+.box2{
+	height :1700;
+	width:900;
+	border-radius:2px;
+	
+}
+.box3{
+	border-radius:5px;
+	margin-right: 50px;
+	float: right;
+	border-radius:2px;
+	width:200px;
+	height :90px;
+	color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+	font: 25px 'BlackJackRegular';	
+}
+.box4{
+	border-radius:8px;
+	margin-left: -30px;
+	float: left;
+	border-radius:2px;
+	width:150px;
+	height :200px;
+	color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+	font: 16px 'BlackJackRegular';	
+}
+.box5{
+	border-radius:8px;
+	margin-left: 50px;
+	float: left;
+	border-radius:2px;
+	width:100px;
+	height :200px;
+	color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+	font: 16px 'BlackJackRegular';	
+}
+
+h10{
+	font-size: 35px;
+	font-family: "Times New Roman";
+	text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #000000;
+}
+h11{
+	font-size: 20px;
+	font-family: "Arial";
+	
+}
+h12{
+	font-size: 19px;
+	font-family: "Arial";
+	
+}
+login{
+    padding: 150px;
+    width: 600px;
+}
+</style>
+</head>
+<script src="quiz.js" > </script>
+<body>
+
+
+
+<center>
+<table border="0" width="995">
+
+<tr class="heading">
+	<td class="logo"><img src="../images/logo.png" width="175" height="150" alt="logo"/></td>
+	<td colspan="8" align="left"><blockquote><h1>Royal Cricket</h1><h2>Sports Center</h2></blockquote></td>
+</tr>
+
+
+
+<tr>
+	<th class="linking"><a class="linking" href="index.html">HOME</a></th>
+	<th class="linking"><a class="linking" href="menu.html">MENU</a></th>
+	<th class="linking"><a class="linking" href="gallery.html">GALLERY</a></th>
+	<th class="linking"><a class="linking" href="About Us.html">ABOUT US</a></th>
+	<th class="linking"><a class="linking" href="Contact Us.html">CONTACT US</a></th>
+	<th class="linking"><a class="linking" href="login.html">LOGIN / SIGN-UP</a></div></th>
+	<th class="linking"><a class="linking" href="quiz.html">Quiz</a></th>
+	<th class="linking"><a class="linking" href="poll.html">Poll</a></th>
+	<th class="linking"><a class="linking" href="Sign out.php">Sign out</a></th>
+</tr>
+</table>
+
+<div id="box">
+<br><br>
+<div id="Qhead" align = "center" class="animated bounceInRight"><u>Cricket Quiz</u></div>
+
+ <div class="animated fadeInDown"><div class="al"><b> <p align="left">You have 2 minutes to answer this quiz</p></b></div></div>
+  <div class="count"><p align="left" id="demo"></p></div>
+
+
+
+<div class="box2" id="back">		
+<br>
+<div id="quiz">
+<div align="left" class ="animated fadeInRight">
+<div id ="quiz">
+<fieldset>		
+<legend><u>Question 01</u></legend><legend> Which nation hosted the ICC T20 World Cup in 2010? </legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans1" VALUE="c">West Indies</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans1" VALUE="a">South Africa</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans1" VALUE="s">Pakistan</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans1" VALUE="d">New Zealand</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 02</u></legend><legend> Which country hosted 2015 ICC World Cup?<legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans2" VALUE="a">India</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans2" VALUE="c">Australia</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans2" VALUE="s">England</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans2" VALUE="d">South Africa</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 03</u></legend><legend> How many associated nations took part in ICC WCT20 2014?</fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans3" VALUE="a">seven</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans3" VALUE="s">four</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans3" VALUE="c">six</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans3" VALUE="d">two</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 04</u></legend><legend> Which among the following city is not a host in ICC’s 2016 edition of T20 World Cup?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans4" VALUE="a">New Delhi</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans4" VALUE="s">Kolkata</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans4" VALUE="c">Chennai</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans4" VALUE="d">Bangaluru</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 05</u></legend><legend>Which two teams played the final of T20 World Cup in 2007?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans5" VALUE="a">New Zealand and Australia</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans5" VALUE="s">West Indies and Sri Lanka</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans5" VALUE="c">India and Pakistan</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans5" VALUE="d">India and Sri Lanka</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 06</u></legend><legend>Who bowled the magical spell of 4/0/12/4 in the Finals for 2012 T20 World Cup?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans6" VALUE="c">Sunil Narine</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans6" VALUE="a">Mahela Jayawardene</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans6" VALUE="s">Ajantha Mendis</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans6" VALUE="d">Marlon Samuels</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">	
+<fieldset>	
+<legend><u>Question 07</u></legend><legend>Which team among the following won the ICC 2012 World T20 Cup?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans7" VALUE="c">England</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans7" VALUE="a">Australia</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans7" VALUE="s">Sri Lanka</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans7" VALUE="d">India</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 08</u></legend><legend> Which team introduced Cricket to the world first?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans8" VALUE="a">Kenya</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans8" VALUE="c">England</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans8" VALUE="s">Sri Lanka</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans8" VALUE="d">India</label><br>
+</fieldset><BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 09</u></legend><legend> Which team introduced IPL first?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans9" VALUE="a">Kenya</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans9" VALUE="s">England</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans9" VALUE="d">Sri Lanka</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans9" VALUE="c">India</label><br>
+</fieldset>
+<BR>
+</div>
+
+<div align="left" class ="animated fadeInRight">
+<fieldset>		
+<legend><u>Question 10</u></legend><legend> What is the highest indiviual runs by a Sri lankan cricketer in test cricket?</legend></fieldset>
+<fieldset>
+<label><INPUT TYPE="RADIO" NAME="ans10" VALUE="c">374</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans10" VALUE="a">356</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans10" VALUE="s">408</label><br>
+<label><INPUT TYPE="RADIO" NAME="ans10" VALUE="d">396</label><br>
+</fieldset></div>
+<BR>
+<br>
+<br>
+</div>
+</div>
+<input type="button" class="css_button" id="btn" value="Check Answers" onclick="validate();"/>
+<input type="button" class="css_button" id="btnclr" value="Clear"/><br><br>
+
+<div class="box5" id = "qq">Q1&nbsp&nbsp&nbsp&nbsp:<br>
+				Q2&nbsp&nbsp&nbsp&nbsp:<br>Q3&nbsp&nbsp&nbsp&nbsp:<br>Q4&nbsp&nbsp&nbsp&nbsp:<br>Q5&nbsp&nbsp&nbsp&nbsp:<br>
+	Q6&nbsp&nbsp&nbsp&nbsp:<br>Q7&nbsp&nbsp&nbsp&nbsp:<br>Q8&nbsp&nbsp&nbsp&nbsp:<br>Q9&nbsp&nbsp&nbsp&nbsp:<br>Q10&nbsp&nbsp:<br>			
+</div>
+<div class="box4" id="result"></div>
+<div class="box3" id="score"></div>
+</div>
+
+
+</div>
+
+<table border="0" width="995">
+<tr class="footer">
+	<td class="copyright" colspan="6"><br /><br /><div class="webs-text align='center'"> Royal Sports Centre. 131 Bambalapitiya, 
+Colombo, Sri Lanka. +94117745700 sales.royalsports@yahoo.com <span style='font-size: 1.3em;'>&copy;</span> Copyright Royal Sports Centre 2016</div>
+	<br /><br /></td>
+</tr>
+
+
+</table>
+
+
+</body>
+</html>

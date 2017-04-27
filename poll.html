@@ -1,0 +1,159 @@
+<!DOCTYPE
+<html>
+<head>
+<link rel="stylesheet" href="animate.css">
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("poll").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+
+<title> Royal Cricket&#8482; Home </title>
+<link rel="icon" type="image/png" href="../images/logo.jpg">
+
+
+<style>
+fieldset{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+h20{
+	word-spacing: 10px;
+	font-size: 20px;
+	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+.poll_box{
+	text-align: center;
+	margin-top: 60px;
+	margin-left: 250px;
+	height : 250px;
+	width : 500px;
+	-webkit-box-shadow: 9px 7px 14px 6px rgba(8,5,8,1);
+-moz-box-shadow: 9px 7px 14px 6px rgba(8,5,8,1);
+box-shadow: 9px 7px 14px 6px rgba(8,5,8,1);
+	background-color:CCFFFF;
+	
+}
+.box{
+	height :550;
+        border-style: solid;
+   	border-color: F0E68C;
+	width:989;
+	background-image: url('../images/bg1.jpg');
+}
+.gap{
+	margin-top:10px;
+}
+#mapbox{
+	width: 955px;
+        height: 400px;
+border-style: double;
+}
+.categoryBox{
+    height: 200px;
+    width: 200px;
+    margin-left:28px;
+    margin-top:20px;
+    margin-right:10px;
+    float: left;
+    border-style: groove;
+}
+h15{
+	font-family:Impact, Charcoal, sans-serif;
+	font-size: 35px;
+	
+}
+h16{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 35px;
+	color: yellow;
+   text-shadow: 1px 1px black; 
+      
+}
+
+h10{
+	font-size: 35px;
+	font-family: "Times New Roman";
+	
+}
+</style>
+
+</head>
+
+<body>
+
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+<center>
+<table border="0" width="995">
+
+<tr class="heading">
+	<td class="logo"><img src="../images/logo.png" width="175" height="150" alt="logo"/></td>
+	<td colspan="8" align="left"><blockquote><h1>Royal Cricket</h1><h2>Sports Center</h2></blockquote></td>
+</tr>
+
+
+
+<tr>
+	<th class="linking"><a class="linking" href="index.html">HOME</a></th>
+	<th class="linking"><a class="linking" href="menu.html">MENU</a></th>
+	<th class="linking"><a class="linking" href="gallery.html">GALLERY</a></th>
+	<th class="linking"><a class="linking" href="About Us.html">ABOUT US</a></th>
+	<th class="linking"><a class="linking" href="Contact Us.html">CONTACT US</a></th>
+	<th class="linking"><a class="linking" href="login.html">LOGIN / SIGN-UP</a></div></th>
+	<th class="linking"><a class="linking" href="quiz.html">Quiz</a></th>
+	<th class="linking"><a class="linking" href="poll.html">Poll</a></th>
+	<th class="linking"><a class="linking" href="Sign out.php">Sign out</a></th>
+</tr>
+</table>
+
+<div class = "box">
+<div class="gap"></div>
+
+<div align="left" class ="animated zoomIn">
+<div class="poll_box">
+	
+	<div id="poll"><br>
+<h16>What is the length of the cricket stump?</h16><br><br>
+<form>
+<fieldset>
+<h20>26 inches :</h20>
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br><h20>28 inches :</h20>
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</fieldset>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+
+<table border="0" width="995">
+<tr class="footer">
+	<td class="copyright" colspan="6"><br /><br /><div class="webs-text "><div align='center'> Royal Sports Centre. 131 Bambalapitiya, 
+Colombo, Sri Lanka. +94117745700 sales.royalsports@yahoo.com <span style='font-size: 1.3em;'>&copy;</span> Copyright Royal Sports Centre 2016</div></div>
+	<br /><br /></td>
+
+</tr>
+
+
+</table>
+</center>
+
+</body>
+</html>

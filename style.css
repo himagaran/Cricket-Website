@@ -1,0 +1,111 @@
+td.logo {
+    width: 70px;
+}
+
+h1{
+	color:#ff3300;
+	letter-spacing:3px;
+	font-family:"Algerian", Broadway, "Cooper black";
+	font-size:24pt;
+}
+
+h1.contacthead{
+	color:#D2691E;
+}
+
+h2{
+	color:#ff3300;
+	font-family:"Algerian", Broadway, "Cooper black";
+}
+
+h2.contacthead{
+	color:#D2691E;
+}
+
+h3{
+	color:#D2691E;
+}
+
+h3.contacthead{
+	color:black;
+}
+
+h4{
+	color:#D2691E;
+}
+
+
+td.copyright {
+    padding: -16px;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    center: 14px;
+}
+
+body{
+	font-family:"Century Gothic", Verdana, century; 
+	font-size: 0.8em;
+	background-image:url('../images/4591_cricket.jpg');
+}
+
+th{
+	color:white;
+}
+
+p{
+	color:Black;
+	text-align:center;
+		
+}
+
+p.text{
+	text-align:center;
+}
+
+tr.heading{
+	background-color:black;
+	color:#ff3300;
+}
+
+th.linking{
+	background-color:#FFFFFF;
+}
+
+tr.footer{
+	background-color:black;
+}
+
+td.copyright{
+	font-size:13px;
+	color:#ff3300;
+}
+
+td.fandt{
+	background-color:black;
+}
+
+td.logo{
+	text-align:center;
+}
+
+table{
+	background-image:url('../images/bg1.jpg');
+	background-repeat:repeat;
+}
+
+
+input[type="text"]{
+	width:250px;
+}
+
+input[id="message"]{
+	width:410px;
+	height:100px;
+}
+
+a.linking{
+	color:black;
+	
+}	
+
